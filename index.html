@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+           <title>Khoá học</title>
+  <meta content="" name="descriptison">
+  <meta content="" name="keywords">
+  <meta property="og:title" content="">
+  <meta property="og:image" content="">
+  <meta property="og:url" content="">
+  <meta property="og:site_name" content="">
+  <meta property="og:description" content="">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="">
+  <meta name="twitter:title" content="">
+  <meta name="twitter:description" content="">
+  <meta name="twitter:image" content="">
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/popper.min.js"></script>
+  <script src="assets/js/form.js"></script>
+  <script src="assets/js/formdn.js"></script>
+
+  <script src="assets/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="assets/font-awesome-4.7.0/css/font-awesome.css">
+  <link rel="stylesheet" type="text/css" href="assets/font-awesome-4.7.0/css/font-awesome.min.css">
+  <script type="text/javascript" src="assets/js/form.js"> </script>
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,700|Roboto:400,900" rel="stylesheet"><link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+  <link href="assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Piedra&display=swap" rel="stylesheet">
+
+  <link rel="shortcut icon" type="image/png" href="assets/img/tu1 - Chaien.png">
+</head>
+
+<body>
+  <header id="header">
+    <div class="container">
+
+      <div id="logo01" class="pull-left">
+        <a href="index.html"><img src="assets/img/tu - Chaien.png" alt=""></a>
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li><a href="index.html">Về Chúng Tôi</a></li>
+          <li><a href="#portfolio">Khoá Học</a></li>
+		  <li><a href="index.html">Giang viên</a></li>
+          <li class="menu-has-children"><a href="">Khoá học chính</a>
+            <ul>
+              <li><a href="#">Anh ngữ tương tác</a></li>
+              <li class="menu-has-children"><a href="#">Luyện thi chứng thi quốc tế</a>
+                <ul>
+                  <li><a href="khoahoc.html">IELTS</a></li>
+                  <li><a href="khoahoc.html">TOEFL</a></li>
+                  <li><a href="khoahoc.html">iBT</a></li>
+                </ul>
+              </li>
+              <li><a href="khoahoc.html">Anh ngữ giao tiếp</a></li>
+              <li><a href="khoahoc.html">Lớp cấp tốc mất gốc</a></li>
+            </ul>
+          </li>
+          <li><a style="cursor:pointer;color:white" onclick="openNav()"> Đăng ký ngay
+          </a></li>
+          <li><a style="cursor:pointer;color:white" onclick="openNav2()"> Đăng nhập</a></li>
+        </ul>
+      </nav>
+      <div id="dangnhap">
+        <a href="javascript:void(0)" class="closebtn1" onclick="closeNav2()">&times;</a>
+        <div id="form">
+          <div id="formdn">
+            <h3>Đăng Nhập</h3>
+            <p>Tên Tài Khoản</p>
+              <input type="text" placeholder="Tên Đăng Nhập" class="form-control" id="tendangnhap1"style="font-size:13px;border-radius:3px;height:35px;"> </input>
+              <p>Mật Khẩu</p>
+              <input type="password" placeholder="Mật Khẩu" class="form-control" id="matkhau1" style="font-size:13px;border-radius:3px;height:35px;"> </input>
+              <input type="submit"  id="submit" value="Đăng Nhập" name="button" onclick="kiemtradn();" onsubmit="kiemtradn();"  style="float:left;height:35px; width:80px;margin-top: 3px;border-radius: 7%;border:solid 1px gray; font-size:12px;background-color:rgb(0,104,240);color:white;" class="form-control; "> </input>
+             <div class="checkform">
+              <p style="color:red;margin-left :120px;margin-bottom: 0;font-size:13px" id="tendangnhap2"></p>
+              <p style="color:red;margin-left :120px;margin-bottom: 0;font-size:13px;" id="matkhau2"></p>
+              </div>
+              <a style="cursor:pointer;color:rgb(124, 124, 124);font-size:14px;" onclick="openQMK()"> Quên mật khẩu</a>
+          </div>
+          <div id="fatw">
+            <div id="anhmau">
+            <img alt="" src="assets/img/Hinh-3.svg" style="height: 300px;width: 225px;padding-left:30px">
+            </div>
+            <div id="dangnhapfb" style="display: none;">
+              <p>sign in name</p>
+              <input type="text" placeholder="Tên Đăng Nhập" class="form-control" id=""style="font-size:13px;border-radius:3px;height:100%;"> </input>
+              <input type="submit"  id="" value="Xác nhận" name="button" onclick="kiemtradn();" onsubmit="kiemtradn();"  style="float:left;height:35px; width:80px;margin-top: 3px;border-radius: 7%;border:solid 1px gray; font-size:12px;background-color:rgb(0,104,240);color:white;" class="form-control; "> </input>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+      <nav class="nav social-nav pull-right d-none d-lg-inline">
+        <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-linkedin"></i></a> <a href="#"><i class="fa fa-envelope"></i></a>
+      </nav>
+    </div>
+  </header>
+  <div id="myNav" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="overlay-content">
+      <form onsubmit="return kiemtra();">
+
+				<!-- Form -->
+			
+				<div class="container">
+					<div class="row">
+            <div class="col-md-8" style="background-color :white; margin-top: 0;margin-left : auto;margin-right:auto">
+              <h3 style="font-style :bold; margin-top: 100px;text-align: center;"> Tạo Tài Khoản </h3>
+
+							<div class="container">
+								<div class="row">
+									<div class="col-md-8" style="margin-top: 30px; margin-left : auto;margin-right:auto">
+										<input type="text" placeholder="Tên đăng nhập" style="height:100%; width:100%;" class="form-control" id="tendangnhap"> </input>
+                  </div>
+                  <div class="checkform1">
+                  <p style="color:red;margin-left :auto;margin-bottom: 0;" id="name"></p>
+                  </div>
+                  <div class="col-md-8" style="margin-top: 30px; margin-left :auto;">
+                    <input type="text" placeholder="Họ" style="height:100%; width:49%;float: left;" class="form-control" id="hoten"> </input>
+                    <input type="text" placeholder="Tên" style="height:100%; width:49%;float: right;" class="form-control" id="hoten"> </input>
+
+                  </div>
+                  <p style="color:red;margin-left :auto;margin-bottom: 0;"></p>
+                  <div class="col-md-8" style="margin-top: 30px; margin-left :auto;">
+                    <input type="text" placeholder="Địa chỉ" style="height:100%; width:100%;float: left;" class="form-control" id="hoten"> </input>
+
+                  </div>
+                  <p style="color:red;margin-left :auto;margin-bottom: 0;"></p>
+									<div class="col-md-8" style="margin-top: 30px; margin-left :auto;margin-right:auto" class="form-control">
+										<input type="password" placeholder="Mật Khẩu" style="height:100%; width:100%;" class="form-control" id="matkhau"> </input>
+                  </div>
+                  <div class="checkform1">
+                  <p style="color:red;margin-left :auto;margin-bottom: 0;" id="password"></p>
+                  </div>
+									<div class="col-md-8" style="margin-top: 30px; margin-left :auto;margin-right:auto">
+										<input type="password" placeholder="Nhập lại mật khẩu" style="height:100%; width:100%;" class="form-control" id="nhaplaimatkhau"> </input>
+                  </div>
+                  <div class="checkform1">
+                  <p style="color:red;margin-left :auto;margin-right:auto;margin-bottom: 0;" id="repassword"></p>
+                  </div>
+
+									<div class="col-md-8" style="margin-top: 30px; margin-left :auto;margin-right:auto">
+										<input type="email" placeholder="Email" style="height:100%; width:100%;" class="form-control" id="mail"> </input>
+                  </div>
+                  <div class="checkform1">
+                  <p style="color:red;margin-left :auto;margin-bottom: 0;" id="err"></p>
+                  </div>
+									<p style="margin-left:160px; padding-top:15px"> You can use this email address to retrieve your password.</p>
+									</div>
+									
+									<div class="col-md-8" style="margin-top: 30px; margin-left :auto;margin-right:auto">
+										<form>
+                      <input type="checkbox" id="check">  I Agree To The Terms Of Service And  Privacy Policy </input>
+                      <div class="checkform1">
+                      <p style="color:red " id="check2"></p>
+                      </div>
+										</form>
+									</div>
+									
+									<div class="col-md-8" style="margin-top: 30px; margin-left :auto;margin-right:auto">
+                    <input type="submit"  id="submit" value="Đăng ký" name="button" onclick="kiemtra();" onsubmit="kiemtra();"  style="float:right;height:100%; width:25%; background-color:rgb(0, 104, 240);color:white;" class="form-control; "> </input>
+                    <input type="submit"  id="submit" value="Đăng Nhập" name="button" onclick="kiemtra();" onsubmit="kiemtra();"  style="float:left;height:100%; width:25%; background-color:rgb(0,104,240);color:white;" class="form-control; "> </input>
+                  </div>
+                  <p style="color:red "></p>
+									<div class="col-md-8" style="margin-top: 30px; margin-left :auto;">
+										
+									</div>
+									<div class="col-md-8" style="margin-top: 30px; margin-left :auto;">  
+										
+									</div>
+									<div class="col-md-8" style="margin-top: 30px; margin-left :auto;">
+										
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<br>
+				<br>
+				<br>
+				<br>				
+		</form>
+  </div>
+  <div id="myNav1" class="overlay1">
+    <div class="overlay-content1">
+      <a href="javascript:void(0)" class="closebtn1" onclick="closeNav1()">&times;</a>
+      <img src="assets/img/sale.jpg" style="width:100%;height:100%;">
+    </div>
+  </div>
+  <div id="titlem">
+      <div class="scrolldk" id="title1" >
+          <div class="txl1">
+            <span style="cursor:pointer;color:white" onclick="openNav1()"> Ưu</br> đãi  </span>
+          </div>
+          </div>
+      <div class="scrolldk" id="title2">
+          <div class="txl2">
+          <span style="cursor:pointer;color:white" onclick="openNav()"> Đăng ký  </span>
+          
+          </div>
+           </div>
+      <div class="scrolldk" id="title3">
+          <div class="txl3">
+          <a href="index.html" style="color:white">Trang chủ</a>
+          </div>
+           </div>
+      </div>
+  <main id="main">
+
+    <section class="portfolio" id="portfolio">
+
+        <div class="container text-center">
+          <h2>
+              Các Chương trình đào tạo
+          </h2>
+        </div>
+  
+        <div class="portfolio-grid">
+          <div class="row">
+            <div class="col-lg-3 col-sm-6 col-xs-12">
+              <div class="card card-block">
+                <img alt="" src="https://sas.edu.vn/images/home/giao-tiep.svg" style="width:360px;height:325px;">
+                  <div class="portfolio-over">
+                    <div>
+                      <h3 class="card-title">
+                        Tiếng anh giao tiếp
+                      </h3>
+  
+                      <p class="card-text">
+
+                        Khóa học luyện Tiếng Anh dành cho những người mong muốn nâng cao trình độ Tiếng Anh cấp tốc. Với lộ trình giảng dạy vượt trội, tăng
+                        cường những lớp học ngoài giờ để thực hành và luyện phản xạ.
+                                         </p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+  
+            <div class="col-lg-3 col-sm-6 col-xs-12">
+              <div class="card card-block">
+                <img alt="" src="https://sas.edu.vn/images/home/tuoi-teen.svg" style="width:360px;height:325px;">
+                  <div class="portfolio-over">
+                    <div>
+                      <h3 class="card-title">
+                        Anh ngữ tuổi teen 
+                      </h3>
+  
+                      <p class="card-text">
+
+                        Với phương pháp học Tiếng Anh theo cơ chế cảm xúc và phản xạ đa giác quan, đáp ứng nhu cầu vận động cao của trẻ em.Khóa học giúp tiếp
+                        thu nhanh vượt trội, phát triển kỹ năng Tiếng Anh siêu tốc.
+                                          </p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+  
+            <div class="col-lg-3 col-sm-6 col-xs-12">
+              <div class="card card-block">
+                <img alt="" src="https://sas.edu.vn/images/home/online.jpg" style="width:360px;height:325px;">
+                  <div class="portfolio-over">
+                    <div>
+                      <h3 class="card-title">
+                        Tiếng anh online
+                      </h3>
+  
+                      <p class="card-text">
+
+                        Khóa học luyện Tiếng Anh dành cho những người mong muốn nâng cao trình độ Tiếng Anh cấp tốc nhưng lại không có thời gian đến lớp học.
+                      </p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+  
+            <div class="col-lg-3 col-sm-6 col-xs-12">
+              <div class="card card-block">
+                <img alt="" src="https://sas.edu.vn/images/home/doanh-nghiep.svg" style="width:360px;height:325px;">
+  
+                  <div class="portfolio-over">
+                    <div>
+                      <h3 class="card-title">
+                        Dành cho doanh nghiệp
+  
+                      </h3>
+  
+                      <p class="card-text">
+
+                        Hệ thống hỗ trợ các lớp học cho các doanh nghiệp với chất lượng được cam kết hiệu quả, chất lượng giảng dạy tốt nhất. Đem đến cho
+                        doanh nghiệp giải pháp tối ưu để nâng cao trình độ cho nhân lực.
+                                          </p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+      </section>
+<!--	  end tt-->
+
+   
+
+<!--    contact-->
+    <section id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h2 class="section-title">Hỗ Trợ</h2>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-3 col-md-4">
+            <div class="info">
+              <div>
+                <i class="fa fa-map-marker"></i>
+                <p>165 Huỳnh Thúc Kháng, P.Bến Nghé,</br> Q.1, Tp.HCM.</p>
+              </div>
+
+              <div>
+                <i class="fa fa-envelope"></i>
+                <p>VTL@gmail.com</p>
+              </div>
+
+              <div>
+                <i class="fa fa-phone"></i>
+                <p>+84 932 236 260</p>
+              </div>
+
+            </div>
+          </div>
+
+			
+			
+			
+			
+			
+			
+			
+			
+          <div class="col-lg-5 col-md-8">
+            <div class="form">
+              <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                <div class="form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Họ Tên:" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                  <div class="validate"></div>
+                </div>
+                <div class="form-group">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Gmail của bạn:" data-rule="email" data-msg="Please enter a valid email" />
+                  <div class="validate"></div>
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Xác nhận:" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                  <div class="validate"></div>
+                </div>
+                <div class="form-group">
+                  <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Lời Nhắn"></textarea>
+                  <div class="validate"></div>
+                </div>
+                <div class="mb-3">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+                </div>
+                <div class="text-center"><button type="submit">Gởi</button></div>
+              </form>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+<!--	  metttttttt-->
+
+  </main>
+<!--	oke-->
+
+<!--footer-->
+  <footer class="site-footer">
+    <div class="bottom" style=" background: rgb(0,145,214);">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-6 col-xs-12 text-lg-left text-center">
+            <p class="copyright-text">
+              &copy; Copyright <strong> 2020 @ </strong>.
+            </p>
+            <div class="credits"></div>
+          </div>
+
+          <div class="col-lg-6 col-xs-12 text-lg-right text-center">
+            <ul class="list-inline">
+              <li class="list-inline-item">
+                <a href="index.html">Trang Chủ</a>
+              </li>
+
+              <li class="list-inline-item">
+                <a href="#about">Về Chúng Tôi</a>
+              </li>
+
+              <li class="list-inline-item">
+                <a href="khoahoc.html">Khoá học</a>
+              </li>
+
+              <li class="list-inline-item">
+                <a href="#portfolio">Giảng viên</a>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </footer>
+<!--	end ft-->
+
+  <a class="scrolltop" href="#"><span class="fa fa-angle-up"></span></a>
+
+<!--  js coppy-->
+
+
+<!--  js chinh-->
+  <script src="assets/js/main.js"></script>
+  <script>
+     function openNav() {
+      document.getElementById("myNav").style.width = "100%";
+    }
+    
+    function closeNav() {
+      document.getElementById('name').innerHTML="";
+      document.getElementById('password').innerHTML="";
+      document.getElementById('repassword').innerHTML="";
+      document.getElementById('err').innerHTML="";
+      document.getElementById('check').innerHTML="";
+      document.getElementById("myNav").style.width = "0%";
+    }
+    function openNav1() {
+  document.getElementById("myNav1").style.width = "490px";
+  document.getElementById("myNav1").style.height = "315px";
+
+}
+
+function closeNav1() {
+  document.getElementById("myNav1").style.width = "0%";
+  document.getElementById("myNav1").style.height = "0%";
+
+}
+function openNav2() {
+  document.getElementById("dangnhap").style.animation="example 1.7s "
+  document.getElementById("dangnhap").style.top = "100px";
+  document.getElementById("dangnhap").style.left = "400px";
+}
+
+function closeNav2() {
+  document.getElementById("anhmau").style.display="block";
+  document.getElementById('tendangnhap2').innerHTML="";
+  document.getElementById('matkhau2').innerHTML="";
+  document.getElementById("dangnhapfb").style.display = "none";
+  document.getElementById("dangnhap").style.animation="example1 1s"
+  document.getElementById("dangnhap").style.top = "-300px";
+  document.getElementById("dangnhap").style.left = "400px";
+}
+function openQMK() {
+ document.getElementById("anhmau").style.display="none";
+  document.getElementById("dangnhapfb").style.width = "185px";
+  document.getElementById("dangnhapfb").style.height = "35px";
+  document.getElementById("dangnhapfb").style.display = "block";
+
+}
+    </script>
+    		<script type="text/javascript" src="assets/js/form.js"> </script>
+
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+#menu{
+	width: 1500px;
+	height : 70%;
+}
+li{	
+	width: 180px;
+	position: relative;
+	float:left;
+}
+ul li{
+	list-style: none;
+}
+ ul li a{
+	
+	text-align: center;
+	padding: 2;
+	display: block;
+	height: 15px;
+	border-right: 1px dotted #999;
+	
+}
+ ul li a:hover{
+	 background-color: #99CCFF;
+	 color: #99CCFF;
+ }
+ 
